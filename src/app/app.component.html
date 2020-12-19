@@ -1,6 +1,6 @@
 <div class="ui container">
   <div class="ui segment">
     <app-search (searchSubmit)="onSearch($event)"></app-search>
-    <app-pages [pages]="pages"></app-pages>
+    <app-pages *ngIf="pages.length" [pages]="pages"></app-pages>
   </div>
 </div>
